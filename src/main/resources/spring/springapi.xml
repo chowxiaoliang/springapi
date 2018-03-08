@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
     <bean id="company" class="com.zl.springapi.service.pojo.Company">
         <property name="aliveTime" value="12"/>
         <property name="location" value="南山大道"/>
         <property name="name" value="腾讯"/>
     </bean>
+
+    <!--配置为true 则使用cglib实现动态代理-->
+    <aop:aspectj-autoproxy expose-proxy="true"/>
 </beans>
