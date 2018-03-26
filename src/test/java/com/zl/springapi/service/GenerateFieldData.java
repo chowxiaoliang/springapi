@@ -7,7 +7,8 @@ public class GenerateFieldData {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("IPPROVINCELOCATION_NUM", "广东省_2,湖北省_3");
         jsonObject.put("GPSPROVINCELOCATION_NUM", "江西省_12,四川省_34");
-        jsonObject.put("CERTNOPROVINCELOCATION_NUM", "广西壮族自治区_1,台湾省_65");
+        jsonObject.put("CERTNOPROVINCELOCATION_N" +
+                "UM", "广西壮族自治区_1,台湾省_65");
         jsonObject.put("MOBILELOCATION_NUM", "泰州市_2,运城市_12");
         jsonObject.put("IPLOCATION_NUM", "广州市_1,深圳市_2");
         jsonObject.put("CERTNOLOCATION_NUM", "重庆市_2,梧州市_1");
@@ -16,6 +17,9 @@ public class GenerateFieldData {
 
         String result = JSONObject.toJSONString(jsonObject);
 
+        JSONObject historypartnercall = new JSONObject();
+        historypartnercall.put("APP_EVENTTYPE_COUNT", "credit_loan_3");
+        historypartnercall.put("APP_EVENTTYPE_DEVICEGET_COUNT", "credit_loan_100.00");
         System.out.println(result);
 
     }
