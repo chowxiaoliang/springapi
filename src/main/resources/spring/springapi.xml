@@ -8,4 +8,7 @@
         <property name="location" value="南山大道"/>
         <property name="name" value="腾讯"/>
     </bean>
+    <bean id="hello" class="com.zl.springapi.service.pojo.Hello" init-method="initMethod" destroy-method="destroyMethod">
+        <constructor-arg name="resultStr" value="today is Sunday"/>
+    </bean>
 </beans>
