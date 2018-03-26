@@ -1,4 +1,5 @@
 package com.zl.springapi.service.pojo;
+
 public class Hello {
 
     private String resultStr;
