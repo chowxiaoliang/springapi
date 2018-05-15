@@ -7,7 +7,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ApplicationContextAwareTest implements ApplicationContextAware {
-
+    public ApplicationContextAwareTest(){
+        System.out.println("ApplicationContextAwareTest constructor is executing");
+    }
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         System.out.println("初始化实现了ApplicationContextAware的类");

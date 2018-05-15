@@ -7,7 +7,7 @@ import org.springframework.beans.factory.BeanFactoryAware;
 /**
  * Created by Administrator on 2018/3/11 0011.
  */
-public class BeanNameFactoryTest implements BeanFactoryAware{
+public class BeanFactoryAwareTest implements BeanFactoryAware{
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
         System.out.println("实现了BeanFactoryAware的bean调用setBeanFacory方法");
